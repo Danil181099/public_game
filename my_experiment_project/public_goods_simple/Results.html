@@ -1,0 +1,24 @@
+{{ block title }}{{ endblock }}
+{{ block content }}
+
+<H1 style="color:cadetblue" align="center">
+    РЕЗУЛЬТАТЫ
+</H1>
+<!--  <p>
+         You started with an endowment of {{ C.ENDOWMENT }},
+          of which you contributed {{ player.contribution }}.
+          Your group contributed {{ group.total_contribution }},
+          resulting in an individual share of {{ group.individual_share }}.
+          Your profit is therefore {{ player.payoff }}.
+      </p> -->
+
+<p>
+    Вы начали с вознаграждения в <b>{{ C.ENDOWMENT }}</b>,
+   из которых было вложено <b>{{ player.contribution }}</b>.
+    Ваша группа заработала <b> {{ group.total_contribution }}</b>.
+    В результате индивидуальная прибыль составляет <b>{{ player.payoff }}</b>.
+</p>
+
+         {{ next_button }}
+
+     {{ endblock }}
